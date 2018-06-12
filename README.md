@@ -1,28 +1,29 @@
 Node Authentication App
 
-In terminal, cd to directory where you want to store this project
-Run git clone /////Nick-2018.git
-Run npm install
-Run run node server.js
+In terminal, cd to directory where you want to store this project  
+Run git clone /////Nick-2018.git  
+Run npm install  
+Run run node server.js  
 
-Navigate to http://localhost:8080 in your browser
-Open the developer tools and go to the console tab.
+Navigate to http://localhost:8080 in your browser  
+Open the developer tools and go to the console tab.  
 
-Run createUser(username, pass)
-Example: createUser('Fred FlintStone', 'Wilma')
+Run createUser(username, pass)  
+Example: createUser('Fred FlintStone', 'Wilma')  
 
-Run storePublicKey(username, pass, publicKey)
+Run storePublicKey(username, pass, publicKey)  
 Example: storePublicKey('Fred FlintStone', 'Wilma', `-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnbMAefrXk4aJlQnKEWbg8/fwM
 PLRmhrXdrQf/bMvQciqGlljBJKgdOmjuaCFy70AD/wuNbcTNaoqFHYNchEs5jOCG
 pwKldfNxNNvW2ZjYgkIR7w+cKJ5j+UHm9jBggVz6vDMmNoCdbh+NYM7QJEjmK3SG
 XnI4r2dHwEFU1wgw2wIDAQAB
------END PUBLIC KEY-----`)
+-----END PUBLIC KEY-----`)  
 
-Run verify() (which will fail, since we haven't signed it yet)
+Run verify() (which will fail, since we haven't signed it yet)  
 
-Run sign(username, pass, privateKey)
-Example: sign('Fred FlintStone', 'Wilma', `-----BEGIN RSA PRIVATE KEY-----
+Run sign(username, pass, privateKey)  
+Example:
+`sign('Fred FlintStone', 'Wilma', `-----BEGIN RSA PRIVATE KEY-----
 MIICXAIBAAKBgQCnbMAefrXk4aJlQnKEWbg8/fwMPLRmhrXdrQf/bMvQciqGlljB
 JKgdOmjuaCFy70AD/wuNbcTNaoqFHYNchEs5jOCGpwKldfNxNNvW2ZjYgkIR7w+c
 KJ5j+UHm9jBggVz6vDMmNoCdbh+NYM7QJEjmK3SGXnI4r2dHwEFU1wgw2wIDAQAB
@@ -36,6 +37,6 @@ a6DTHTLQQLa7j33lX/x2fhGpBqFe09ZLcLXeZx7ZlWp7lU0K4Ei+/NtN1QJAEtss
 Q9nt0wyya0X7kasRyY2xLWeLdAIfK3F2KuKaHMB5UXjIdmvDbPek1WH5Bpx90zYk
 MLc1m8cGDohtosvggQJBAMkl/IQ4XT554sJiSASGtD8x0uX7dQXYALWdzQP17CKz
 /cF94ZIG26O4ekJQVBL0F/ros1uDGdnrTuk6wtScN9c=
------END RSA PRIVATE KEY-----`)
+-----END RSA PRIVATE KEY-----`)` 
 
-Run verify() again (which will succeed this time, since we just signed it)
+Run verify() again (which will succeed this time, since we just signed it)  
