@@ -1,6 +1,6 @@
-Node Authentication App
+## Node Authentication App
 
-In terminal, cd to directory where you want to store this project  
+In the terminal, cd to directory where you want to store this project  
 Run `git clone https://github.com/nhunt3/node-token-app.git`  
 Run `npm install`  
 Run run `node server.js`  
