@@ -12,7 +12,8 @@ Run `createUser(username, password)`
 Example: `createUser('Fred FlintStone', 'pass123')`  
 
 Run `storePublicKey(username, password, publicKey)`  
-Example: ``````
+Example:
+``````
 storePublicKey('Fred FlintStone', 'Wilma', `-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnbMAefrXk4aJlQnKEWbg8/fwM
 PLRmhrXdrQf/bMvQciqGlljBJKgdOmjuaCFy70AD/wuNbcTNaoqFHYNchEs5jOCG
