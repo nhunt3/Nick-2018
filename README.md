@@ -8,10 +8,10 @@ Run run `node server.js`
 Navigate to http://localhost:8080 in your browser  
 Open the developer tools and go to the console tab.  
 
-Run createUser(username, password)  
+Run `createUser(username, password)`  
 Example: `createUser('Fred FlintStone', 'pass123')`  
 
-Run storePublicKey(username, password, publicKey)  
+Run `storePublicKey(username, password, publicKey)`  
 Example: ``storePublicKey('Fred FlintStone', 'Wilma', `-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnbMAefrXk4aJlQnKEWbg8/fwM
 PLRmhrXdrQf/bMvQciqGlljBJKgdOmjuaCFy70AD/wuNbcTNaoqFHYNchEs5jOCG
@@ -21,7 +21,7 @@ XnI4r2dHwEFU1wgw2wIDAQAB
 
 Run `verify()` (which will fail, since we haven't signed it yet)  
 
-Run sign(username, password, privateKey)  
+Run `sign(username, password, privateKey)`  
 Example:
 ``sign('Fred FlintStone', 'pass123', `-----BEGIN RSA PRIVATE KEY-----
 MIICXAIBAAKBgQCnbMAefrXk4aJlQnKEWbg8/fwMPLRmhrXdrQf/bMvQciqGlljB
