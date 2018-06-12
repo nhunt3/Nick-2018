@@ -12,12 +12,14 @@ Run `createUser(username, password)`
 Example: `createUser('Fred FlintStone', 'pass123')`  
 
 Run `storePublicKey(username, password, publicKey)`  
-Example: ``storePublicKey('Fred FlintStone', 'Wilma', `-----BEGIN PUBLIC KEY-----
+Example: ``````
+storePublicKey('Fred FlintStone', 'Wilma', `-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnbMAefrXk4aJlQnKEWbg8/fwM
 PLRmhrXdrQf/bMvQciqGlljBJKgdOmjuaCFy70AD/wuNbcTNaoqFHYNchEs5jOCG
 pwKldfNxNNvW2ZjYgkIR7w+cKJ5j+UHm9jBggVz6vDMmNoCdbh+NYM7QJEjmK3SG
 XnI4r2dHwEFU1wgw2wIDAQAB
------END PUBLIC KEY-----`)``  
+-----END PUBLIC KEY-----`)
+``````  
 
 Run `verify()` (which will fail, since we haven't signed it yet)  
 
