@@ -5,14 +5,14 @@ const mongoClient = require('mongodb').MongoClient;
 const config = require('./config');
 const apiRoutes = express.Router();
 const routes = require('./routes');
-
 const port = process.env.PORT || 8080;
-app.set('superSecret', config.secret);
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/client'));
 
 app.listen(port);
-console.log('Magic happens at port ' + port);
+console.log('Connected on port ' + port);
 
 mongoClient.connect(config.database, function(err, client) {
     if (err) console.error('Error with Mongo connecting!', err)
